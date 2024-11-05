@@ -1,58 +1,236 @@
 *{
+    margin: 0;
     box-sizing: border-box;
-    margin: 0px;
-    padding: 0px;
+    outline: none;
+    list-style: none;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
 }
-.header{
-    height: 86px;
+
+.main-container{
+    width: 97%;
+    max-width: 1440PX;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contaner{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px 30px 0px 30px;
+    box-shadow: 0px 11px 11px -9px #777;
+}
+.contaner .logo{
     display: flex;
-    margin-bottom: 0;
-    width: 100%;
-    box-shadow: 0px 4px 4px rgba(0,0,0,0.25);
-  
+    justify-content: flex-start;
+    align-items: center;
+    width: 20%;
 }
-.left{
+.contaner .logo .mobile-logo{
+    display: none;
+}
+.contaner .logo .friste img{
+    max-width: 103%;
+    width: 142px;
+    margin-top: 10px;
+    padding-left: 10px;
+    
+}
+.contaner .logo .secend img{
+    max-width: 100%;
+    width: 142px;
+    padding-left:10px;
+}
+.contaner .ul-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+}
+.contaner .ul-nav ul{
+    display: flex;
+}
+
+.contaner nav{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 86px;
+}
+.contaner nav .navli{
+    display: flex;
+}
+.contaner nav {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.contaner nav ul li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+.contaner nav .input{
+    box-shadow: inset 0px 0px 6px 0px rgba(16, 74, 130, 0.2);
+    border-radius: 20px;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+}
+
+.contaner nav input{
+    border: none;
+    border-radius: 20px;
+    padding: 12px 10px;
+    background: transparent;
+}
+.contaner nav input::placeholder{
+    font-size: 12px ;
+    text-transform: capitalize;
+
+}
+
+.contaner nav ul li{
+    padding: 10px  15px;
+    font-weight: 500;
+    text-transform: capitalize;
+    font-size: 18px;
+    color: gray;
+}
+.contaner nav .profile .man{
+    height: 15px;
+    width: 23px;
+    background-color: #005DAA;
+    position: relative;
+    bottom: -6px;
+    margin-right: 20px;
+    border-radius: 100% / 100% 100% 0% 0%;
+}
+.contaner nav .profile .man::before{
+    position: absolute;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: #005DAA;
+    top: -13px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+.contaner nav .profile{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 354px;
-    padding: 0;
-    margin: 0;
-    column-gap: 10px;
+    margin-left: 20px;
 }
-.bluemarj{
-    padding: 0;
-    margin: 0;
-    height: 33px;
-    width: 142PX;
-    margin-top: -13px;
-}
-.redmarj{
-    width: 140px;
-    height: 47px;
-}
-.search{
+.contaner nav .profile .markt{
+    height: 20px;
+    width: 40px;
+    background-color: black;
+    margin-left: 20px;
+    border-radius: 100% / 10% 10% 219% 0;
     position: relative;
+
 }
-.search input{
-    border: none;
-    border-radius: 21px;
-    height: 32PX;
-    width: 283PX;
-    margin-top: 34px;
-    BOX-SHADOW: inset 0px 0px 5px 0px rgba(16,74,130,0.2);
+.contaner nav .profile svg{
+    font-size: 30px;
+    color: #CF4D12;
+
+
 }
-.iconsearch{
-    position: absolute;
-    top: 39px;
-    left: 2px;
-}
-.list{
-    display: flex;
-    list-style-type: none;
-    column-gap: 26px;
-    padding: 40px;
-}
-.li a{
-    display: block;
+@media (max-width:1200px){
+    .contaner{
+        background-color: #0055A6;
+        padding: 0;
+        margin: 0;
+    }
+    .contaner .logo{
+        width: auto;
+    }
+    .contaner nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+    .contaner .logo .friste,.secend{
+        display: none;
+    }
+    .contaner .logo .mobile-logo{
+        display: block;
+        
+    }
+    .contaner .logo .mobile-logo img{
+        width: auto;
+        max-width: 60px;
+        padding: 10px;
+    }
+    .contaner .ul-nav{
+       padding: 10px;
+       width: auto;
+    }
+    .contaner .ul-nav .profile .man{
+        display: none;
+    }
+    .contaner nav .input{
+        box-shadow: inset 0px 0px 6px 0px rgba(16, 74, 130, 0.2);
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+    .contaner nav .input svg{
+        color: #005DAA;
+        
+    }
+    .contaner nav .profile{
+        margin-left: 20px;
+    }
+    .contaner nav .profile svg{
+        color: white;
+    }
+    .contaner nav input{
+        width: 84%;
+        margin-left: 10PX;
+    }
+    .contaner nav input svg{
+        font-size: 20px;
+        color: white;
+    }
+    .contaner{
+        position: relative;
+    }
+    .contaner nav .navli{
+        position: absolute;
+        display: block;
+        left: 0;
+        bottom: -50px;
+        display: flex;
+        width: 100%;
+        height: 50px;
+        background-color: white;
+        justify-content: space-evenly;
+        align-items: center;
+    } 
+    .contaner nav .navli li{
+        flex-direction: column;
+        padding: 10px;
+        gap: 0;
+    }
+    .contaner nav .navli li svg{
+        margin-top: 20px;
+        margin-bottom: 7px;
+        font-size: 30px;
+    }
+    .contaner nav .navli li{
+        font-size: 11px;
+    }
+    
 }
