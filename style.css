@@ -1,81 +1,92 @@
-*{
-    margin: 0;
+* {
+    margin: 0px;
     box-sizing: border-box;
     outline: none;
     list-style: none;
-    padding: 0;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
-
 }
 
-.main-container{
-    width: 97%;
-    max-width: 1440PX;
+.main-container {
+    width: 100%;
+    max-width: 1440px;
     margin-left: auto;
-    margin-right: auto;
+    /* margin-right: auto; */
+    background-color: rgb(245, 248, 251);
+    height: 20000px;
 }
-.contaner{
+
+.contaner {
     margin-left: auto;
     margin-right: auto;
-    padding: 20px 10px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px 30px 0px 30px;
-    box-shadow: 0px 11px 11px -9px #777;
+    padding: 10px 30px 0px;
+    box-shadow: rgb(119, 119, 119) 0px 11px 11px -9px;
+    position: sticky;
+    top: 0px;
+    background-color: white;
 }
-.contaner .logo{
+
+.contaner .logo {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 20%;
 }
-.contaner .logo .mobile-logo{
+
+.contaner .logo .mobile-logo {
     display: none;
 }
-.contaner .logo .friste img{
+
+.contaner .logo .friste img {
     max-width: 103%;
     width: 142px;
     margin-top: 10px;
     padding-left: 10px;
-    
 }
-.contaner .logo .secend img{
+
+.contaner .logo .secend img {
     max-width: 100%;
     width: 142px;
-    padding-left:10px;
+    padding-left: 10px;
 }
-.contaner .ul-nav{
+
+.contaner .ul-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 60%;
 }
-.contaner .ul-nav ul{
+
+.contaner .ul-nav ul {
     display: flex;
 }
 
-.contaner nav{
+.contaner nav {
     display: flex;
     align-items: center;
     gap: 15px;
     height: 86px;
 }
-.contaner nav .navli{
+
+.contaner nav .navli {
     display: flex;
 }
+
 .contaner nav {
-display: flex;
-justify-content: center;
-align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
-.contaner nav ul li{
+
+.contaner nav ul li {
     display: flex;
     justify-content: flex-end;
     align-items: center;
     gap: 10px;
 }
-.contaner nav .input{
-    box-shadow: inset 0px 0px 6px 0px rgba(16, 74, 130, 0.2);
+
+.contaner nav .input {
+    box-shadow: rgba(16, 74, 130, 0.2) 0px 0px 6px 0px inset;
     border-radius: 20px;
     width: 20%;
     display: flex;
@@ -84,133 +95,147 @@ align-items: center;
     position: relative;
 }
 
-.contaner nav input{
+.contaner nav input {
     border: none;
     border-radius: 20px;
     padding: 12px 10px;
     background: transparent;
 }
-.contaner nav input::placeholder{
-    font-size: 12px ;
-    text-transform: capitalize;
 
+.contaner nav input::placeholder {
+    font-size: 12px;
+    text-transform: capitalize;
 }
 
-.contaner nav ul li{
-    padding: 10px  15px;
+.contaner nav ul li {
+    padding: 10px 15px;
     font-weight: 500;
     text-transform: capitalize;
-    font-size: 18px;
+    font-size: 13px;
     color: gray;
 }
-.contaner nav .profile .man{
+
+.contaner nav .profile .man {
     height: 15px;
     width: 23px;
-    background-color: #005DAA;
+    background-color: rgb(0, 93, 170);
     position: relative;
     bottom: -6px;
     margin-right: 20px;
     border-radius: 100% / 100% 100% 0% 0%;
 }
-.contaner nav .profile .man::before{
+
+.contaner nav .profile .man::before {
     position: absolute;
     content: "";
     height: 15px;
     width: 15px;
-    background-color: #005DAA;
+    background-color: rgb(0, 93, 170);
     top: -13px;
     border-radius: 50%;
     left: 50%;
     transform: translateX(-50%);
-
 }
-.contaner nav .profile{
+
+.contaner nav .profile {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 20px;
 }
-.contaner nav .profile .markt{
+
+.contaner nav .profile .markt {
     height: 20px;
     width: 40px;
     background-color: black;
     margin-left: 20px;
-    border-radius: 100% / 10% 10% 219% 0;
+    border-radius: 100% / 10% 10% 219% 0px;
     position: relative;
-
 }
-.contaner nav .profile svg{
+
+.contaner nav .profile svg {
     font-size: 30px;
-    color: #CF4D12;
-
-
+    color: rgb(207, 77, 18);
 }
-@media (max-width:1200px){
-    .contaner{
-        background-color: #0055A6;
-        padding: 0;
-        margin: 0;
+
+@media (max-width: 1200px) {
+    .contaner {
+        background-color: rgb(0, 85, 166);
+        padding: 0px;
+        margin: 0px;
     }
-    .contaner .logo{
+
+    .contaner .logo {
         width: auto;
     }
-    .contaner nav{
+
+    .contaner nav {
         display: flex;
         justify-content: space-between;
         align-items: center;
         height: 70px;
     }
-    .contaner .logo .friste,.secend{
+
+    .contaner .logo .friste, .secend {
         display: none;
     }
-    .contaner .logo .mobile-logo{
+
+    .contaner .logo .mobile-logo {
         display: block;
-        
     }
-    .contaner .logo .mobile-logo img{
+
+    .contaner .logo .mobile-logo img {
         width: auto;
         max-width: 60px;
         padding: 10px;
     }
-    .contaner .ul-nav{
-       padding: 10px;
-       width: auto;
+
+    .contaner .ul-nav {
+        padding: 10px;
+        width: auto;
     }
-    .contaner .ul-nav .profile .man{
+
+    .contaner .ul-nav .profile .man {
         display: none;
     }
-    .contaner nav .input{
-        box-shadow: inset 0px 0px 6px 0px rgba(16, 74, 130, 0.2);
+
+    .contaner nav .input {
+        box-shadow: rgba(16, 74, 130, 0.2) 0px 0px 6px 0px inset;
         width: 90%;
         margin-left: auto;
         margin-right: auto;
         background-color: white;
     }
-    .contaner nav .input svg{
-        color: #005DAA;
-        
+
+    .contaner nav .input svg {
+        color: rgb(0, 93, 170);
     }
-    .contaner nav .profile{
+
+    .contaner nav .profile {
         margin-left: 20px;
     }
-    .contaner nav .profile svg{
+
+    .contaner nav .profile svg {
         color: white;
     }
-    .contaner nav input{
+
+    .contaner nav input {
         width: 84%;
-        margin-left: 10PX;
+        margin-left: 10px;
     }
-    .contaner nav input svg{
+
+    .contaner nav input svg {
         font-size: 20px;
         color: white;
     }
-    .contaner{
+
+    .contaner {
         position: relative;
     }
-    .contaner nav .navli{
+
+    .contaner nav .navli {
         position: absolute;
-        display: block;
-        left: 0;
+        left: 0px;
         bottom: -50px;
         display: flex;
         width: 100%;
@@ -218,19 +243,131 @@ align-items: center;
         background-color: white;
         justify-content: space-evenly;
         align-items: center;
-    } 
-    .contaner nav .navli li{
+    }
+
+    .contaner nav .navli li {
         flex-direction: column;
         padding: 10px;
-        gap: 0;
+        gap: 0px;
     }
-    .contaner nav .navli li svg{
+
+    .contaner nav .navli li svg {
         margin-top: 20px;
         margin-bottom: 7px;
         font-size: 30px;
     }
-    .contaner nav .navli li{
+
+    .contaner nav .navli li {
         font-size: 11px;
     }
-    
+}
+
+.friste-section {
+    background-color: rgb(245, 248, 251);
+}
+
+.friste-section .graydiv {
+    background-color: rgb(245, 248, 251);
+    height: 46px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+    flex-direction: row-reverse;
+    padding-right: 25px;
+}
+
+.friste-section .graydiv .livraison {
+    font-family: NotoSans, sans-serif;
+    color: rgb(0, 55, 108);
+    font-weight: 700;
+    font-size: 12px;
+}
+
+.friste-section .imgkhouna {
+    height: 100%;
+    width: 100%;
+    padding: 0px 39px;
+}
+
+.second-section .title_offre {
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin-left: 70px;
+    margin-top: 30px;
+    padding: 66px 0px 19px 42px;
+    color: rgb(13, 93, 170);
+    margin-bottom: 2px;
+}
+
+.second-section .title_offre::after {
+    content: "";
+    height: 7px;
+    width: 100px;
+    background-color: rgb(254, 224, 53);
+    position: absolute;
+    border-radius: 15px;
+}
+
+.section_offre {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.offres {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    column-gap: 38px;
+    padding: 30px 40px;
+}
+
+.cart {
+    height: 251px;
+    width: 251px;
+    background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 0px 20px;
+}
+
+.c1 {
+    background-image: url("images/ariel.png");
+}
+
+.c2 {
+    background-image: url("images/carte-noire.png");
+}
+
+.c3 {
+    background-image: url("images/edam.png");
+}
+
+.c4 {
+    background-image: url("images/dari.png");
+}
+
+.btn_offre {
+    display: flex;
+    justify-content: center;
+    padding: 2px 30px 82px 29px;
+}
+
+.btn_offre .href_offre {
+    background-color: rgb(13, 93, 170);
+    color: white;
+    text-decoration: none;
+    padding: 14px 22px 14px 23px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.girl {
+    width: 100%;
+    margin-top: -19px;
+}
+.inscrivez_vous{
+    width: 100%;
+    margin-top: 76px;
 }
