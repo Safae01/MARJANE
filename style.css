@@ -517,5 +517,16 @@ nav .navli .mega-menu{
     .c2 , .c3 ,.c4 {
         display: none;
     }
+    .info{
+        flex-direction: column;
+        padding: 32PX 69px;
+    }
+    .info #cc{
+        display: none;
+    }
+    .info .details ul{
+        display: none;
+    }
+    
 }
 
