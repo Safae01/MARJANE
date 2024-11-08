@@ -379,6 +379,9 @@ nav .navli .mega-menu{
     margin-left: -33px;
     font-weight: 700;
 }
+.flech{
+    display: none;
+}
 @media (max-width: 1200px) {
     .contaner {
         background-color: rgb(0, 85, 166);
@@ -527,6 +530,35 @@ nav .navli .mega-menu{
     .info .details ul{
         display: none;
     }
-    
+    .flech{
+        display: block;
+        font-size: 34px;
+        color: #005DAA;
+        border: none;
+        background-color: transparent;
+        margin-top: 133px;
+    }
 }
 
+.store{
+    padding: 10px;
+    margin-top: 50px;
+    display: inline;
+    transition: 0.9s ease;
+  }
+  .store img:hover{
+    opacity: 0.8;
+  }
+  .social {
+    margin-top: 30px;
+    display: inline;
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  .social p{
+    margin-top: 10px;
+    color: blue;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
