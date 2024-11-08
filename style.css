@@ -13,7 +13,7 @@
     margin-left: auto;
     /* margin-right: auto; */
     background-color: rgb(245, 248, 251);
-    height: 20000px;
+    height: auto;
 }
 
 .contaner {
@@ -24,6 +24,7 @@
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 100;
 }
 
 .contaner .logo {
@@ -48,13 +49,14 @@
     max-width: 100%;
     width: 142px;
     padding-left: 10px;
+    cursor: pointer;
 }
 
 .contaner .ul-nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 60%;
+    width: auto;
 }
 
 .contaner .ul-nav ul {
@@ -74,7 +76,7 @@
 
 .contaner nav {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -114,7 +116,9 @@
     font-size: 13px;
     color: gray;
 }
-
+nav .navli .mega-menu{
+    display: none;
+}
 .contaner nav .profile .man {
     height: 15px;
     width: 23px;
@@ -157,111 +161,6 @@
     font-size: 30px;
     color: rgb(207, 77, 18);
 }
-
-@media (max-width: 1200px) {
-    .contaner {
-        background-color: rgb(0, 85, 166);
-        padding: 0px;
-        margin: 0px;
-    }
-
-    .contaner .logo {
-        width: auto;
-    }
-
-    .contaner nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: 70px;
-    }
-
-    .contaner .logo .friste, .secend {
-        display: none;
-    }
-
-    .contaner .logo .mobile-logo {
-        display: block;
-    }
-
-    .contaner .logo .mobile-logo img {
-        width: auto;
-        max-width: 60px;
-        padding: 10px;
-    }
-
-    .contaner .ul-nav {
-        padding: 10px;
-        width: auto;
-    }
-
-    .contaner .ul-nav .profile .man {
-        display: none;
-    }
-
-    .contaner nav .input {
-        box-shadow: rgba(16, 74, 130, 0.2) 0px 0px 6px 0px inset;
-        width: 90%;
-        margin-left: auto;
-        margin-right: auto;
-        background-color: white;
-    }
-
-    .contaner nav .input svg {
-        color: rgb(0, 93, 170);
-    }
-
-    .contaner nav .profile {
-        margin-left: 20px;
-    }
-
-    .contaner nav .profile svg {
-        color: white;
-    }
-
-    .contaner nav input {
-        width: 84%;
-        margin-left: 10px;
-    }
-
-    .contaner nav input svg {
-        font-size: 20px;
-        color: white;
-    }
-
-    .contaner {
-        position: relative;
-    }
-
-    .contaner nav .navli {
-        position: absolute;
-        left: 0px;
-        bottom: -50px;
-        display: flex;
-        width: 100%;
-        height: 50px;
-        background-color: white;
-        justify-content: space-evenly;
-        align-items: center;
-    }
-
-    .contaner nav .navli li {
-        flex-direction: column;
-        padding: 10px;
-        gap: 0px;
-    }
-
-    .contaner nav .navli li svg {
-        margin-top: 20px;
-        margin-bottom: 7px;
-        font-size: 30px;
-    }
-
-    .contaner nav .navli li {
-        font-size: 11px;
-    }
-}
-
 .friste-section {
     background-color: rgb(245, 248, 251);
 }
@@ -288,6 +187,9 @@
     height: 100%;
     width: 100%;
     padding: 0px 39px;
+}
+.imgkhouna:hover{
+    opacity: 0.5 ;
 }
 
 .second-section .title_offre {
@@ -362,12 +264,258 @@
     font-weight: 600;
     font-size: 16px;
 }
-
+.btn_offre .href_offre:hover{
+    opacity:0.7;
+}
 .girl {
     width: 100%;
     margin-top: -19px;
+    cursor: pointer;
+}
+.girl:hover{
+    opacity: 0.5;
 }
 .inscrivez_vous{
     width: 100%;
     margin-top: 76px;
+    cursor: pointer;
 }
+.inscrivez_vous:hover{
+    opacity: 0.5;
+}
+.forth-section .find_me {
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin-left: 70px;
+    margin-top: 30px;
+    padding: 44px 0px 19px 42px;
+    color: rgb(13, 93, 170);
+    margin-bottom: 2px;
+}
+
+.forth-section .find_me::after {
+    content: "";
+    height: 7px;
+    width: 100px;
+    background-color: rgb(254, 224, 53);
+    position: absolute;
+    border-radius: 15px;
+}
+.maps{
+    margin-top: 12px;
+}
+.fifth-section .engagements {
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+    text-transform: uppercase;
+    margin-left: 70px;
+    margin-top: 30px;
+    padding: 44px 0px 19px 42px;
+    color: rgb(13, 93, 170);
+    margin-bottom: 2px;
+    
+}
+
+.fifth-section .engagements::after {
+    content: "";
+    height: 7px;
+    width: 100px;
+    background-color: rgb(254, 224, 53);
+    position: absolute;
+    border-radius: 15px;
+}
+.main_engagement{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 41px;
+}
+.logo_engagement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.logo_engagement:hover{
+    opacity: 0.5;
+}
+.img_eng{
+    box-shadow:  -10px 10px 20px rgba(0, 0, 0, 0.16);
+    border-radius: 50%;
+}
+.mieux{
+    margin-top: 35px;
+    color: #005DAA;
+    font-size: 20px;
+    text-decoration: none;
+}
+.info{
+    background-color: #e9f0ff;
+    height: 300px;
+    width: 100%;
+    padding: 60px 30px 27px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.info a{
+    text-decoration: none;
+    color: #0b3787;;
+}
+.info ul li {
+    list-style-type: disc;
+    color: #0b3787;
+
+}
+.info a:hover{
+    opacity: 0.5;
+}
+.details{
+    display: flex;
+    flex-direction: column;
+}
+.title{ 
+    line-height: 46px;
+    margin-left: -33px;
+    font-weight: 700;
+}
+@media (max-width: 1200px) {
+    .contaner {
+        background-color: rgb(0, 85, 166);
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .contaner .logo {
+        width: auto;
+    }
+
+    .contaner nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 70px;
+    }
+
+    .contaner .logo .friste, .secend,.home {
+        display: none;
+    }
+
+    .contaner .logo .mobile-logo {
+        display: block;
+    }
+
+    .contaner .logo .mobile-logo img {
+        width: auto;
+        max-width: 60px;
+        padding: 10px;
+    }
+
+    .contaner .ul-nav {
+        padding: 10px;
+        width: auto;
+    }
+
+    .contaner .ul-nav .profile .man {
+        display: none;
+    }
+
+    .contaner nav .input {
+        box-shadow: rgba(16, 74, 130, 0.2) 0px 0px 6px 0px inset;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: white;
+    }
+
+    .contaner nav .input svg {
+        color: rgb(0, 93, 170);
+    }
+
+    .contaner nav .profile {
+        margin-left: 20px;
+    }
+
+    .contaner nav .profile svg {
+        color: white;
+    }
+
+    .contaner nav input {
+        width: 84%;
+        margin-left: 10px;
+    }
+
+    .contaner nav input svg {
+        font-size: 20px;
+        color: white;
+    }
+
+    .contaner {
+        position: relative;
+    }
+
+    .contaner nav .navli {
+        position: absolute;
+        left: 0px;
+        display: flex;
+        width: 100%;
+        background-color: white;
+        justify-content: space-evenly;
+        align-items: center;
+        bottom: -100%;
+    }
+
+    .contaner nav .navli li {
+        flex-direction: column;
+        padding: 10px;
+        gap: 0px;
+    }
+
+    .contaner nav .navli li svg {
+        /* margin-top: 20px; */
+        margin-bottom: 7px;
+        font-size: 30px;
+    }
+
+    .contaner nav .navli li {
+        font-size: 11px;
+    }
+    .friste-section .imgkhouna {
+        margin-top: 39px;
+        padding: 0;
+    }
+    .second-section .title_offre{
+        padding: 20px 0px;
+        font-size: 26px;
+    }
+    .section_offre .offres .c4{
+        display: none;
+    }
+    .offres{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 28px;
+        padding: 30px;
+    }
+    .inscrivez_vous{
+        margin-top: 12px;
+    }
+    .forth-section .find_me{
+        padding: 20px 0px;
+        font-size: 26px;
+    }
+    .fifth-section .engagements{
+        padding: 20px 0px;
+        font-size: 26px;
+    }
+}
+@media(max-width:786px){
+    .offres{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .c2 , .c3 ,.c4 {
+        display: none;
+    }
+}
+
