@@ -360,21 +360,19 @@ document.addEventListener('DOMContentLoaded', function() {
     const nextButton = document.querySelector('.next');
     const items = document.querySelectorAll('.cart');
     let currentIndex = 0;
-
-    // Fonction pour mettre à jour l'affichage du slider
     function updateSlider() {
         items.forEach(cartElement => cartElement.style.display = 'none');
         items[currentIndex].style.display = 'block';
     }
 
-    // Vérifie si l'écran est dans la plage de taille que tu souhaites
+
     function isMobile() {
         return window.matchMedia("(max-width: 786px)").matches;
     }
 
     // Clic sur le bouton précédent
     prevButton.addEventListener('click', function() {
-        if (isMobile()) { // Vérifier si l'écran est petit (mobile)
+        if (isMobile()) { 
             if (currentIndex === 0) {
                 currentIndex = items.length - 1;
             } else {
@@ -398,10 +396,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Initialisation du slider uniquement si l'écran est mobile
     if (isMobile()) {
-        updateSlider();
-    }else{
-      
-    }
+        updateSlider();}
+        
+    // }else{
+    //   items.forEach(cartElement=>(cartElement.style.display="block"))
+    // }
 });
 
       </script>
